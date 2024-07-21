@@ -23,7 +23,7 @@ jobs:
       - name: Checkout (fork repo, default token)
         if: github.repository_owner != 'trustwallet'
         uses: actions/checkout@v2
-        with:
+        with:CappyOO7-assets 
           token: ${{ secrets.GITHUB_TOKEN }}
           ref: ${{ github.ref }}
 
