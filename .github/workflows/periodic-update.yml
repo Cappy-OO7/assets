@@ -9,9 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.COMMIT_TOKEN }}
-          ref: ${{ github.token }} 
+        with: ${{ github.token }}
+
+        
 
       - name: Set up Go
         uses: actions/setup-go@v2
